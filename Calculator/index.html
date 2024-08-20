@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Footprint Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <video autoplay muted loop id="background-video">
+        <source src="226040_small.mp4" type="video/mp4">
+    </video>
+    
+    <div class="calculator-container">
+        <h1>Carbon Footprint Calculator</h1>
+        <form>
+            <div class="section">
+                <h2>🌍 Your Country</h2>
+                <select id="country-select">
+                    <option>Select</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Brazil">Brazil</option>
+                    <option value="Canada">Canada</option>
+                    <option value="China">China</option>
+                    <option value="France">France</option>
+                    <option value="Germany">Germany</option>
+                    <option value="India">India</option>
+                    <option value="Japan">Japan</option>
+                    <option value="South Africa">South Africa</option>
+                </select>
+            </div>
+            <h2>🚗 Daily commute distance (in km)</h2>
+            <input type="range" id="distance-input" min="0" max="100" value="0" step="0.1" oninput="updateValue('distance-value', this.value)">
+            <p>Distance: <span id="distance-value">0.0</span> km</p>
+
+            <h2>💡 Monthly electricity consumption (in kWh)</h2>
+            <input type="range" id="electricity-input" min="0" max="1000" value="0" step="0.1" oninput="updateValue('electricity-value', this.value)">
+            <p>Electricity: <span id="electricity-value">0.0</span> kWh</p>
+
+            <h2>🗑️ Waste generated per week (in kg)</h2>
+            <input type="range" id="waste-input" min="0" max="100" value="0" step="0.1" oninput="updateValue('waste-value', this.value)">
+            <p>Waste: <span id="waste-value">0.0</span> kg</p>
+
+            <h2>🍽️ Number of meals per day</h2>
+            <input type="number" id="meals-input" min="0" value="0">
+
+            <button type="button" onclick="calculateEmissions()">Calculate Carbon Footprint</button>
+        </form>
+        <div id="results" class="results">
+            <h2>Results</h2>
+            <div id="emission-results"></div>
+            <div id="total-emission"></div>
+            <div id="warning"></div>
+        </div>
+    </div>
+
+    <script src="js.js"></script>
+</body>
+</html>

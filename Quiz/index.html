@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco-Friendly Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Eco-Friendly Quiz</h1>
+
+        <div class="rules">
+            <h2>Rules of the Quiz</h2>
+            <ul>
+                <li>Answer all 5 questions to the best of your knowledge.</li>
+                <li>Select only one answer per question.</li>
+                <li>Each correct answer will earn you a 5% discount coupon for eco-friendly products.</li>
+                <li>Click the "Submit" button to see your results and get your discount coupon.</li>
+            </ul>
+        </div>
+
+        <div class="terms">
+            <h2>Terms and Conditions</h2>
+            <ul>
+                <li>Each correct answer will earn you a 5% discount coupon for eco-friendly products.</li>
+                <li>The discount is applicable only to eco-friendly products and cannot be combined with other offers.</li>
+                <li>The discount coupon is valid for 30 days from the date of issuance.</li>
+                <li>Coupons are non-transferable and cannot be exchanged for cash.</li>
+            </ul>
+        </div>
+
+        <form id="quiz-form">
+            <div class="question">
+                <h3>Question 1: What is the most carbon-friendly way to get to work?</h3>
+                <ul>
+                    <li><input type="radio" name="q1" value="drive"> Drive a car</li>
+                    <li><input type="radio" name="q1" value="bus"> Take the bus</li>
+                    <li><input type="radio" name="q1" value="bike"> Ride a bike</li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3>Question 2: Which of the following has the smallest carbon footprint?</h3>
+                <ul>
+                    <li><input type="radio" name="q2" value="beef"> Eating beef</li>
+                    <li><input type="radio" name="q2" value="chicken"> Eating chicken</li>
+                    <li><input type="radio" name="q2" value="vegetables"> Eating vegetables</li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3>Question 3: How does reducing meat consumption affect your carbon footprint?</h3>
+                <ul>
+                    <li><input type="radio" name="q3" value="increase"> It increases it</li>
+                    <li><input type="radio" name="q3" value="decrease"> It decreases it</li>
+                    <li><input type="radio" name="q3" value="no_effect"> It has no effect</li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3>Question 4: What is a carbon offset?</h3>
+                <ul>
+                    <li><input type="radio" name="q4" value="tax"> A tax on carbon emissions</li>
+                    <li><input type="radio" name="q4" value="credit"> A credit for reducing emissions</li>
+                    <li><input type="radio" name="q4" value="donation"> A donation to environmental projects</li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3>Question 5: Which mode of transportation typically has the highest carbon footprint?</h3>
+                <ul>
+                    <li><input type="radio" name="q5" value="car"> Driving a car</li>
+                    <li><input type="radio" name="q5" value="plane"> Flying in a plane</li>
+                    <li><input type="radio" name="q5" value="train"> Taking a train</li>
+                </ul>
+            </div>
+            <button type="button" onclick="checkAnswers()">Submit</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

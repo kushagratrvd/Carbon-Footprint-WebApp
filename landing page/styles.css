@@ -1,0 +1,1041 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 2%;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 1rem;
+}
+* {box-sizing:border-box}
+div.gallery {
+    border: 1px solid #ccc;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px; /* Adjust as needed */
+  margin: 0 auto;
+  padding: 10px; /* Optional padding for spacing around the grid */
+}
+
+.image-container {
+  position: relative;
+  width: calc(25% - 20px); /* 25% width with a gap between items */
+  margin-bottom: 20px; /* Space between rows */
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Inherit text color */
+  overflow: hidden; /* Ensure content doesn't overflow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.image-container:hover {
+  transform: scale(1.05); /* Slightly zoom in on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: opacity 0.3s ease; /* Smooth transition for image opacity */
+}
+
+.image-container:hover img {
+  opacity: 0.8; /* Slightly dim the image on hover */
+}
+
+.image-container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box; /* Ensure padding is included in width */
+  text-align: center;
+  transition: background 0.3s ease; /* Smooth transition for background */
+}
+
+.image-container:hover .content {
+  background: rgba(0, 0, 0, 0.7); /* Darken background on hover */
+}
+
+.image-container h1 {
+  margin: 0 0 10px;
+  font-size: 1.2em;
+}
+
+.image-container p {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+  .image-container {
+    width: calc(50% - 10px); /* 2 items per row on medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .image-container {
+    width: calc(100% - 20px); /* 1 item per row on small screens */
+  }
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 80%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+ 
+
+
+/* Hover effect */
+.column1 img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    cursor: pointer; /* Change cursor to pointer */
+}
+.row > .column {
+    padding: 0 8px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* Container for the image gallery */
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap onto multiple lines if needed */
+    margin: 10px; /* Adjust spacing between columns */
+}
+/* Ensure the section and content are properly styled */
+.cta-section {
+    width: 100%; /* Make sure the section takes full width */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.cta-content {
+    position: relative; /* Create a positioning context for child elements */
+    width: 100%; /* Adjust as needed */
+    margin: 0 auto; /* Center the content if it has a max-width */
+    padding: 20px; /* Add padding if desired */
+}
+
+/* Style for the calculator image */
+.calculator-img {
+     /* Position the image absolutely within .cta-content */
+    top: 10%; /* Adjust to position the image vertically */
+     /* Adjust to position the image horizontally */
+    width: 88%; /* Adjust the width of the image */
+    height: 130%; /* Maintain the aspect ratio */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover effect for the calculator image */
+.calculator-img:hover {
+    transform: scale(1.1); /* Slightly enlarge the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+}
+
+@media (max-width: 768px) {
+    .calculator-img {
+        width: 30vw; /* Adjust width for smaller screens */
+        top: 40%; /* Adjust vertical positioning for smaller screens */
+        right: 2%; /* Adjust horizontal positioning for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .calculator-img {
+        width: 40vw; /* Further adjust width for very small screens */
+        top: 6%; /* Adjust vertical positioning for very small screens */
+        right: 6%; /* Adjust horizontal positioning for very small screens */
+    }
+}
+ 
+/* Menu toggle (hamburger icon) */
+.menu-toggle {
+    color: #1a4d1a;
+    font-size: 24px; /* Adjust size of hamburger icon */
+    cursor: pointer;
+}
+
+/* Navigation links */
+.nav-links {
+    width: 100%;
+    display: flex;
+    gap: 15px; /* Adjust spacing between links */
+}
+ 
+ 
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it stays above other content */
+    background-color: rgba(6, 82, 30, 0.6);
+    color:#333; /* Semi-transparent white */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    /* Optional: Add shadow for better visibility */
+}
+.nav-links img {
+    width: 70px; /* Adjust the width as needed */
+    height: 70px; /* Maintain aspect ratio */
+    margin-right: 15px; /* Space between image and links */
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap; /* Allow items to wrap if needed */
+}
+
+/* Styling for navigation links */
+.nav-links a {
+    color: black; /* Set text color to black */
+    text-decoration: none;
+    padding: 20px 24px; /* Adjust padding for better spacing */
+    font-size: 1.15em; /* Increase font size */
+    background-color: transparent; /* Transparent background for links */
+    transition: background 0.3s ease; /* Smooth transition for background */
+    font-weight: bold; /* Make text bold */
+}
+
+/* Change background color on hover */
+.nav-links a:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Example: light grey background on hover */
+}
+
+/* Hide menu toggle by default (show it on smaller screens) */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide links by default */
+        flex-direction: column;
+        width: 100%;
+        background-color: #333; /* Match navbar background color */
+        position: absolute;
+        top: 60px; /* Adjust based on navbar height */
+        left: 0;
+        z-index: 1;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show links when menu is active */
+    }
+
+    .menu-toggle {
+        display: block; /* Show the menu toggle button */
+    }
+
+    /* Adjust font size and padding for mobile screens */
+    .nav-links a {
+        font-size: 1em; /* Slightly smaller font size for mobile */
+        padding: 10px; /* Adjust padding for mobile screens */
+    }
+}
+
+
+/* Style for each column */
+.column {
+    flex: 1 1 25%; /* Flex-grow, flex-shrink, and flex-basis */
+    padding: 10px; /* Space around each image */
+}
+
+
+/* Style for images */
+.column img {
+    width: 100%; /* Make images fill their containers */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: rounded corners for images */
+    transition: 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Add hover effect */
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect on hover */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Responsive design for different screen sizes */
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    .column {
+        flex: 1 1 50%; /* Two columns on medium screens */
+    }
+}
+
+/* Small devices (phones, 576px and up) */
+@media (max-width: 576px) {
+    .column {
+        flex: 1 1 100%; /* Single column on small screens */
+    }
+}
+
+  /* Create four equal columns that floats next to eachother */
+  .column {
+
+    padding: 10%;
+    float: left;
+    width: 25%;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Hide the slides by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Caption text */
+  .caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  img.demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  
+  img.hover-shadow {
+    transition: 0.3s;
+  }
+  
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+/* Common styles for CTA sections */
+.cta-section .cta-content {
+    background-image: url('');
+    height: 58vh;
+    background-color: #fff;
+    background-size: cover; /* Ensures the background covers the entire div */
+    background-position: center; /* Centers the image */
+    padding: 20px;
+    border-radius: 8px;
+    color: #fff; /* Ensure text is readable on the background */
+}
+
+/* Basic styles for the section */
+#calculator {
+  padding: 20px;
+  text-align: center;
+}
+
+.cta-content {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.calculator-img {
+  width: 95%;
+  height: 140%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  #calculator {
+      padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  #calculator {
+      padding: 10px;
+  }
+
+  .cta-content {
+      padding: 0 10px;
+  }
+}
+
+ 
+ 
+
+/* Styles for About Us section */
+.about-section .about-content {
+    background-image: url('Screenshot\ 2024-08-19\ 020432.png');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 8px;
+    color: #fff; /* Adjust text color for readability */
+}
+
+/* Optional: styles for buttons and other elements */
+.button {
+    background-color: #4caf50; /* Green button */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    margin: 0;
+}
+
+.navbar nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+.navbar nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem;
+}
+
+.quote-section {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.quote-section p {
+    font-size: 7.4rem;
+    font-weight: bold;
+    color: #2c6b2f;
+}
+
+.image-slider {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+}
+
+.image-slider .slider {
+    display: flex;
+    transition: transform 1s ease;
+}
+
+.image-slider img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.cta-section {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+ 
+
+ 
+
+.about-section {
+    margin: 2rem 0;
+    text-align: center;
+}
+/* Basic styling for the section */
+#quiz{
+    width: 100%; /* Make sure the section takes full width */
+    box-sizing: border-box;
+    margin-top: 15%;
+    margin-left: 2.1%;
+}
+ 
+ 
+ 
+ 
+ 
+ /* Basic styles for the section */
+.quiz2-section {
+  position: relative; /* Ensure the section is positioned correctly */
+  overflow: hidden; /* Hide overflow to maintain the image effect */
+}
+
+/* Make the link fill the entire section */
+.quiz2-link {
+  display: block; /* Make the anchor tag behave like a block element */
+  background-image: url('qiuizzzzzzzzz.jpeg'); /* Default background image */
+  background-size: cover; /* Ensure the background image covers the section */
+  background-position: center; /* Center the background image */
+  width: 95%;
+  height: 650px; /* Default height, adjust as needed */
+  transition: transform 0.5s ease; /* Smooth transition for scaling effect */
+  text-decoration: none; /* Remove underline from the link */
+}
+
+/* Hover effect */
+.quiz2-link:hover {
+  transform: scale(1.05); /* Slightly scale up the section */
+}
+
+/* Optional: If you want to style the content inside the link */
+.quiz2-content {
+  position: relative;
+  z-index: 1; /* Ensure content is above the background image */
+  color: white; /* Adjust text color for readability */
+  padding: px; /* Add padding if needed */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .quiz2-link {
+      height: 300px; /* Adjust height for tablets and small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .quiz2-link {
+      height: 200px; /* Adjust height for mobile screens */
+  }
+}
+/* Basic styles for the section */
+#ecommerce {
+  padding: 20px;
+  text-align: center;
+}
+
+.cta-content {
+  max-width: 100%;
+  margin: 0 auto;
+}
+.cta-content h1{
+  font-size: 3.5em;
+}
+.cta-content h2 {
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  color: #000; /* Change the text color to black */
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 25px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #5dd863;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #11ad64;
+}
+
+/* Responsive grid layout */
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.image-item {
+  flex: 1 1 calc(25% - 10px);
+  box-sizing: border-box;
+}
+
+.image-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.image-item img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .image-item {
+      flex: 1 1 calc(50% - 10px);
+  }
+}
+
+@media (max-width: 480px) {
+  .image-item {
+      flex: 1 1 100%;
+  }
+}
+
+/* Footer styling */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: relative; /* Ensure footer is positioned relative to contain absolute children */
+}
+
+/* Social media icon list styling */
+footer ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 1rem 0 0;
+  list-style: none;
+}
+
+footer ul li {
+  list-style: none;
+}
+
+footer ul li a {
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 80px;
+  font-size: 35px;
+  margin: 0 10px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+  z-index: 1;
+}
+
+footer ul li a .icon {
+  position: relative;
+  color: #262626;
+  transition: .5s;
+  z-index: 3;
+}
+
+footer ul li a:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+footer ul li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: .5s;
+  z-index: 2;
+}
+
+footer ul li a:hover:before {
+  top: 0;
+}
+
+footer ul li:nth-child(1) a:before {
+  background: #3b5999;
+}
+
+footer ul li:nth-child(2) a:before {
+  background: #55acee;
+}
+
+footer ul li:nth-child(3) a:before {
+  background: #0077b5;
+}
+
+footer ul li:nth-child(4) a:before {
+  background: #dd4b39;
+}
+
+/* Ensure the container uses flexbox to align items in a row */
+/* Ensure the container uses flexbox to align items in a row */
+/* Ensure the container uses flexbox to align items in a row */
+.cta-content {
+  text-align: center; /* Center align text and buttons */
+}
+
+.image-gallery {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  gap: 70px; /* Adjust spacing between items */
+  flex-wrap: wrap; /* Allow wrapping if necessary */
+}
+
+/* Make the link fill the entire figure */
+.image-gallery a {
+  display: block; /* Ensure the anchor tag behaves like a block element */
+  position: relative;
+  margin-top: 5%;
+  width: 350px; /* Adjust width as needed */
+  height: 200px; /* Adjust height as needed */
+  overflow: hidden; /* Hide any overflow */
+  border-radius: 8px; /* Optional: Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Shadow effect */
+  text-decoration: none; /* Remove underline from the link */
+}
+
+/* Styling for the image */
+.image-gallery a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+/* Styling for the figcaption */
+.image-gallery a figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 2%;
+  color: white;
+  background: rgba(0, 0, 0, 0.2); /* Semi-transparent background */
+  transition: transform 0.3s; /* Smooth transition */
+}
+
+/* Styling for figcaption span and h3 */
+.image-gallery a h3, .image-gallery a span {
+  transition: transform 0.3s; /* Smooth transition */
+}
+
+/* Hover effect */
+.image-gallery a:hover img {
+  opacity: 0.35;
+  filter: blur(5px);
+  transform: scale(1.1);
+}
+
+.image-gallery a:hover figcaption span {
+  transform: translate3d(0%, 0%, 0);
+}
+
+.image-gallery a:hover figcaption h3 {
+  transform: translate3d(0%, -100%, 0);
+}
+
+/* Additional styles for responsiveness */
+@media (max-width: 768px) {
+  .image-gallery a {
+    width: 130px; /* Adjust width for smaller screens */
+    height: 150px; /* Adjust height for smaller screens */
+  }
+}
+
+html {
+  height: 100%;
+}
+ 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2em 1em;
+  text-align: center;
+}
+.column {
+  width: 100%;
+  padding: 0.5em 0;
+}
+h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 3.5em;
+  color: #1f003b;
+}
+.card {
+  box-shadow: 0 0 2.4em rgba(25, 0, 58, 0.1);
+  padding: 3.5em 1em;
+  border-radius: 0.6em;
+  color: #1f003b;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: #ffffff;
+}
+.card .img-container {
+  width: 8em;
+  height: 8em;
+  background-color: #83cb8b;
+  padding: 0.5em;
+  border-radius: 50%;
+  margin: 0 auto 2em auto;
+}
+.card img {
+  width: 100%;
+  border-radius: 50%;
+}
+.card h3 {
+  font-weight: 500;
+}
+.card p {
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0.5em 0 2em 0;
+  letter-spacing: 2px;
+}
+.icons {
+  width: 50%;
+  min-width: 180px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.card a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.4em;
+}
+.card:hover {
+  background: linear-gradient(#0c581a, #23e082);
+  color: #ffffff;
+}
+.card:hover .img-container {
+  transform: scale(1.15);
+}
+@media screen and (min-width: 768px) {
+  section {
+    padding: 1em 7em;
+  }
+}
+@media screen and (min-width: 992px) {
+  section {
+    padding: 1em;
+  }
+  .card {
+    padding: 5em 1em;
+  }
+  .column {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 0 1em;
+  }
+}
+
+ 
+

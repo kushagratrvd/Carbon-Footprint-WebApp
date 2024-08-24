@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../LoginSignUp/Style/index.css" />
+    <link rel="stylesheet" href="../LoginSignUp/Style/Registration.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet" />
+    <title>Profile</title>
+  </head>
+  <script>
+    if (!localStorage.getItem("Login")) {
+      alert("Please log in");
+      location.href = "./Login.html";
+    }
+  </script>
+  <header>
+    <div class="nav">
+      <span class="logo"><a href="../landing page/index.html">Home</a></span>
+      <ul class="menu">
+       
+        
+        <a href="./Login.html">
+          <i class="ri-user-3-line user"></i>
+        </a>
+        
+        <button class="logout" id="logout">Logout</button>
+      </ul>
+    </div>
+  </header>
+  <body>
+
+    <video autoplay muted loop id="background-video">
+      <source src="./Lumion 10 _ Nature _ Cinematic _ Animation _ Lumion Video _ Lumion Animation (1).mp4" type="video/mp4">
+  </video>
+
+  <div class="container">
+    <div class="profile">
+      
+      <div class="wrapperProfile">
+        <span><img src="./assets/img/avatar.png" class="profileImg" alt="Profile"
+        /></span>
+        <h1 class="logo">Welcome back <strong id="fullname" ></strong></h1>
+      </div>
+    </div>
+  </div>
+    <script src="./style.js"></script>
+
+  </body>
+
+</html>

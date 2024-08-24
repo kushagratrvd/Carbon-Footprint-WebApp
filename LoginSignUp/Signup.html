@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Style/index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="./Style/Registration.css" />
+
+    <title>Create Account</title>
+  </head>
+  <header>
+    <div class="nav">
+      <span class="logo"><a href="../landing page/index.html">Home</a></span>
+      <ul class="menu">
+        
+        <a href="./Login.html">
+          <i class="ri-user-3-line user"></i>
+        </a>
+
+      </ul>
+    </div>
+
+  </header>
+  <body>
+
+    <video autoplay muted loop id="background-video">
+      <source src="./Lumion 10 _ Nature _ Cinematic _ Animation _ Lumion Video _ Lumion Animation (1).mp4" type="video/mp4">
+  </video>
+
+    <div class="container">
+      <div class="card">
+        <p class="loginText">Create Account</p>
+        <form class="form">
+          <label for="fname">Full Name :</label>
+          <input
+            type="text"
+            name="fname"
+            required
+            id="fname"
+            placeholder="Full Name" />
+          <label for="email">Email Address :</label>
+          <input
+            type="email"
+            name="email"
+            required
+            id="email"
+            placeholder="xyz@gmail.com" />
+          <label for="password">Password :</label>
+          <input
+            type="password"
+            name="password"
+            required
+            id="password"
+            placeholder="Password" />
+          <div class="showPass">
+            <span>
+              <input type="checkbox" name="showPass" id="showPass" />
+              <label for="showPass">Show Password</label>
+            </span>
+            <span>
+              <button type="submit" class="sub" id="createAccount">
+                Create Account
+              </button>
+            </span>
+          </div>
+
+          <span class="line"></span>
+          <div class="create">
+            <p class="text">
+              Already have an Account -&nbsp;
+              <a class="link" href="./Login.html">Login Here</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./registration.js"></script>
+    <script src="./style.js"></script>
+  </body>
+</html>

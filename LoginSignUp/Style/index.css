@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  background-color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding-left: 20px;
+  padding-right: 20px;
+  justify-content: space-between;
+}
+
+.menu > .menuItem:hover,
+.sidemenuItem:hover {
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.cart,
+.user,
+.menuicon,
+.icon {
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.banner {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  /* border-radius: 10px;
+  background-color: #33333325; */
+  color: rgb(255, 255, 255);
+  flex-direction: column;
+  /* background-image: linear-gradient(
+    to right,
+    rgba(177, 166, 156, 0.438),
+    rgb(0 0 0 /0)
+  ); */
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.logout {
+  padding: 6px;
+  border-radius: 5px;
+  float: right;
+  background-color: black;
+  color: wheat;
+  border: none;
+  cursor: pointer;
+}
+.profile {
+  padding: 20px;
+}
+.wrapperProfile {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  align-items: center;
+  overflow: hidden;
+  text-align: center;
+}
+
+.heading {
+  margin: 15px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  font-size: 2rem;
+  letter-spacing: 3px;
+  font-weight: bold;
+  word-spacing: 5px;
+}
+
+
+.check {
+  background-color: rgb(255, 60, 0);
+  padding: 10px;
+  padding: 4;
+  clip-path: circle();
+  color: white;
+  font-weight: bold;
+}
+#itemTotal {
+  font-size: 1rem;
+}
+
+.deleteItem {
+  cursor: pointer;
+  font-weight: bolder;
+}
+/* .cartItems > .productPrice {
+  float: left;
+} */
+.hr {
+  width: 92%;
+  height: 2px;
+  background-color: #333333;
+}
+.total {
+  margin: 10px;
+  font-size: 1.5rem;
+  display: flex;
+  margin-right: 80px;
+  margin-left: 80px;
+  justify-content: space-between;
+}
+.checkBtn {
+  display: flex;
+  float: inline-end;
+  margin-top: 10px;
+  text-align: center;
+  margin-right: 40px;
+  margin-bottom: 40px;
+}
+
+.block {
+  display: flex;
+  flex-wrap: wrap;
+}
+.nbr {
+  color: wheat;
+}
+

@@ -1,0 +1,138 @@
+#background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.logo, .user{
+  
+    background-color: white;
+    color: black; /* This changes the text color to black, as white text on a white background would be invisible */
+    padding: 5px; /* Optional: adds some padding around the text */
+    border-radius: 5px; /* Optional: makes the corners rounded */
+    text-decoration: none; /* Removes underline from the link */
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 85dvh;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+}
+.card {
+  /* background-color: rgb(0, 0, 0); */
+  display: flex;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(32, 70, 27),
+    rgb(111, 241, 104)
+  );
+  padding: 30px;
+  width: 400px;
+  /* box-shadow: 1px 1px 1px 1px #3333339d; */
+  flex-direction: column;
+  border-radius: 10px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3px;
+}
+.loginText {
+  text-align: center;
+  font-size: 1.9rem;
+  font-weight: bolder;
+  margin-top: -1px;
+  color: aliceblue;
+}
+label {
+  font-weight: bold;
+  color: aliceblue;
+}
+input {
+  padding: 5px;
+  height: 30px;
+  padding-left: 10px;
+  margin: 10px 0 10px 0;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+textarea {
+  padding: 5px;
+  padding-left: 10px;
+  margin: 10px 0 10px 0;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+.sub {
+  margin-top: -10px;
+  width: 150px;
+  transition: 0.2s ease;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  font-size: medium;
+}
+.sub:hover {
+  background-color: black;
+  color: wheat;
+  cursor: pointer;
+}
+.showPass {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 15px;
+  /* margin-top: 10px; */
+}
+.showPass > span {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+.sub {
+  margin-top: 5px;
+}
+.line {
+  width: 70%;
+  height: 1px;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: aliceblue;
+}
+.line2 {
+  width: 90%;
+  height: 1px;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: aliceblue;
+}
+.text {
+  color: aliceblue;
+}
+.link {
+  color: black;
+  font-size: large;
+  font-weight: bold;
+  transition: 0.2s ease;
+}
+.link:hover {
+  color: wheat;
+}
+.create {
+  text-align: center;
+}
+
+.Checkoutform {
+  padding: 20px;
+}

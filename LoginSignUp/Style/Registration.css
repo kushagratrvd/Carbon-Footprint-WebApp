@@ -11,10 +11,10 @@
 .logo, .user{
   
     background-color: white;
-    color: black; /* This changes the text color to black, as white text on a white background would be invisible */
-    padding: 5px; /* Optional: adds some padding around the text */
-    border-radius: 5px; /* Optional: makes the corners rounded */
-    text-decoration: none; /* Removes underline from the link */
+    color: black; 
+    padding: 5px; 
+    border-radius: 5px; 
+    text-decoration: none; 
 }
 .container {
   display: flex;

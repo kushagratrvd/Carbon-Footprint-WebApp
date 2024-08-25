@@ -13,17 +13,16 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-/* Fullscreen Video */
+
 #background-video {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    object-fit: cover; /* Ensures the video covers the entire screen without distortion */
-    z-index: -1; /* Sends the video behind all other content */
+    object-fit: cover; 
+    z-index: -1; 
 }
-/* Existing styles... */
 
 #celebration {
     text-align: center;

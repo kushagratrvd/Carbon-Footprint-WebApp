@@ -1,7 +1,7 @@
 const API_KEY = "98a6acc0cc3843488af761c76292167e";
 const url = "https://newsapi.org/v2/everything?q=";
 
-// Define categories
+
 const categories = {
     "CarbonEmission": "carbon emission",
     "Wildlife": "wildlife",
@@ -40,7 +40,7 @@ async function fetchNews(query) {
 
             imgElement.src = article.urlToImage;
             imgElement.onerror = () => {
-                imgElement.src = 'path/to/fallback-image.png'; // Fallback image URL
+                imgElement.src = 'path/to/fallback-image.png'; 
             };
             titleElement.textContent = article.title;
             descriptionElement.textContent = article.description;

@@ -19,7 +19,7 @@ function checkAnswers() {
 
     const discount = score * 5;
     const couponCode = `Eco${discount}`;
-    const websiteURL = 'https://www.emissio.com'; // Replace with your actual website URL
+    const websiteURL = 'https://www.emissio.com'; 
 
     const resultMessage = score > 0
         ? `You answered ${score} out of ${totalQuestions} questions correctly!`
@@ -29,13 +29,11 @@ function checkAnswers() {
     const resultDiv = document.getElementById('result');
 
     if (score > 0) {
-        // Show the celebratory notification
         document.getElementById('discount-info').innerHTML = `You've earned a ${discount}% discount!<br> Use coupon code: <strong>${couponCode}</strong> at <a href="${websiteURL}" target="_blank">EMISSIO</a>.`;
         celebrationDiv.classList.remove('celebration-hidden');
         startBalloonAnimation();
         resultDiv.innerHTML = resultMessage;
     } else {
-        // Show a message encouraging the user to try again
         celebrationDiv.classList.add('celebration-hidden');
         resultDiv.innerHTML = resultMessage;
     }
@@ -57,9 +55,8 @@ function startBalloonAnimation() {
 }
 
 function animateBalloon(balloon) {
-    const animationDuration = Math.random() * 5 + 5; // Between 5 and 10 seconds
-    const disappearDelay = 2; // 2 seconds before the balloon starts disappearing
-
+    const animationDuration = Math.random() * 5 + 5; 
+    const disappearDelay = 2; 
     balloon.style.transition = `transform ${animationDuration}s linear, opacity ${animationDuration - disappearDelay}s linear ${disappearDelay}s`;
 
     setTimeout(() => {
@@ -69,5 +66,5 @@ function animateBalloon(balloon) {
 
     setTimeout(() => {
         balloon.remove();
-    }, animationDuration * 1000); // Remove balloon after the full animation duration
+    }, animationDuration * 1000); 
 }

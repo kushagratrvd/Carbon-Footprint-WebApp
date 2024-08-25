@@ -23,20 +23,20 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .section {
-  width: 100%; /* make the section full width */
-  text-align: center; /* center the content horizontally */
-  margin: 0 auto; /* center the section horizontally */
-  padding-top: 20px; /* add some padding to move it down from the top */
+  width: 100%; 
+  text-align: center; 
+  margin: 0 auto; 
+  padding-top: 20px; 
 }
 
 .section h2 {
-  margin-bottom: 10px; /* add some space between the heading and the select box */
+  margin-bottom: 10px; 
 }
 
 #country-select {
-  width: 50%; /* make the select box half the width of the section */
-  margin: 0 auto; /* center the select box horizontally */
-  display: block; /* make the select box a block element to center it */
+  width: 50%; 
+  margin: 0 auto; 
+  display: block; 
 }
 
 h1, h2 {

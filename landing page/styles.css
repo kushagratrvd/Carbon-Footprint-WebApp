@@ -848,6 +848,7 @@ footer ul li:nth-child(4) a:before {
   height: 100%;
   object-fit: cover;
   transition: opacity 0.3s, transform 0.3s; 
+}
 
 .image-gallery a figcaption {
   position: absolute;

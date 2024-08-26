@@ -1,16 +1,16 @@
 const API_KEY = "98a6acc0cc3843488af761c76292167e";
 const url = "https://newsapi.org/v2/everything?q=";
 
-
+// Define categories
 const categories = {
-    "CarbonEmission": "carbon emission",
-    "Wildlife": "wildlife",
     "Pollution": "pollution",
     "Environment": "environment",
+    "CarbonEmission": "carbon emission",
+    "Wildlife": "wildlife",
     "Agriculture": "agriculture"
 };
 
-window.addEventListener("load", () => fetchNews("carbon emission"));
+window.addEventListener("load", () => fetchNews("pollution"));
 
 async function fetchNews(query) {
     const res = await fetch(`${url}${query}&apiKey=${API_KEY}`);
@@ -40,7 +40,7 @@ async function fetchNews(query) {
 
             imgElement.src = article.urlToImage;
             imgElement.onerror = () => {
-                imgElement.src = 'path/to/fallback-image.png'; 
+                imgElement.src = 'path/to/fallback-image.png'; // Fallback image URL
             };
             titleElement.textContent = article.title;
             descriptionElement.textContent = article.description;

@@ -53,7 +53,7 @@ nav {
 }
 
 .company-logo {
-    margin-right: 280px; 
+    margin-right: 280px; /* Space between logo and nav links */
 }
 
 .company-logo img {
@@ -169,6 +169,7 @@ main {
     color: var(--accent-color);
 }
 
+/* Responsive Styles */
 @media (max-width: 768px) {
     .nav-links {
         display: none;

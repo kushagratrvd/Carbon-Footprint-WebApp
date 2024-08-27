@@ -19,7 +19,7 @@ function checkAnswers() {
 
     const discount = score * 5;
     const couponCode = `Eco${discount}`;
-    const websiteURL = 'https://www.emissio.com'; 
+    const websiteURL = '../ecommerce/index.html'; 
 
     const resultMessage = score > 0
         ? `You answered ${score} out of ${totalQuestions} questions correctly!`

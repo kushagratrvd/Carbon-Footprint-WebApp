@@ -12,6 +12,18 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";
   setTimeout(showSlides, 2000); 
 }
+<script>
+window.embeddedChatbotConfig = {
+chatbotId: "lA8DF88CX7SjMpA8K5-vr",
+domain: "www.chatbase.co"
+}
+</script>
+<script
+src="https://www.chatbase.co/embed.min.js"
+chatbotId="lA8DF88CX7SjMpA8K5-vr"
+domain="www.chatbase.co"
+defer>
+</script>
 let currentIndex = 0;
 
 function showNextImage() {
